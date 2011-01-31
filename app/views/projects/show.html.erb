@@ -1,0 +1,32 @@
+<p>
+  <b>Cost:</b>
+  <%=h @project.cost %>
+</p>
+
+<p>
+  <b>Schematic Cost:</b>
+  <%=h @project.schematic_cost %>
+</p>
+
+<p>
+  <b>Preliminary Cost:</b>
+  <%=h @project.preliminary_cost %>
+</p>
+
+<p>
+  <b>Working Drawing Cost:</b>
+  <%=h @project.working_drawing_cost %>
+</p>
+
+<p>
+  <b>Total Design Fee Cost:</b>
+  <%=h @project.total_design_fee_cost %>
+</p>
+
+<p>
+  <b>Services During Construction Cost:</b>
+  <%=h @project.services_during_construction_cost %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

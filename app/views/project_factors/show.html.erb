@@ -1,0 +1,33 @@
+<p>
+  <b>Cost:</b>
+  <%=h @project_factor.cost %>
+</p>
+
+<p>
+  <b>Schematic factor:</b>
+  <%=h @project_factor.schematic_factor %>
+</p>
+
+<p>
+  <b>Preliminary factor:</b>
+  <%=h @project_factor.preliminary_factor %>
+</p>
+
+<p>
+  <b>Working drawing factor:</b>
+  <%=h @project_factor.working_drawing_factor %>
+</p>
+
+<p>
+  <b>Total design fee factor:</b>
+  <%=h @project_factor.total_design_fee_factor %>
+</p>
+
+<p>
+  <b>Services during construction factor:</b>
+  <%=h @project_factor.services_during_construction_factor %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_factor_path(@project_factor) %> |
+<%= link_to 'Back', project_factors_path %>

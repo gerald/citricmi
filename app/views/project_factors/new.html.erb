@@ -1,0 +1,35 @@
+<h1>New project_factor</h1>
+
+<% form_for(@project_factor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </p>
+  <p>
+    <%= f.label :schematic_factor %><br />
+    <%= f.text_field :schematic_factor %>
+  </p>
+  <p>
+    <%= f.label :preliminary_factor %><br />
+    <%= f.text_field :preliminary_factor %>
+  </p>
+  <p>
+    <%= f.label :working_drawing_factor %><br />
+    <%= f.text_field :working_drawing_factor %>
+  </p>
+  <p>
+    <%= f.label :total_design_fee_factor %><br />
+    <%= f.text_field :total_design_fee_factor %>
+  </p>
+  <p>
+    <%= f.label :services_during_construction_factor %><br />
+    <%= f.text_field :services_during_construction_factor %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', project_factors_path %>

@@ -1,0 +1,19 @@
+<h1>New project</h1>
+
+<% form_for(@project) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= observe_form "new_project", :url => compute_cost_projects_path, :frequency => 0.25 %>
+
+<div id="project_cost_div"></div>
+
+<%= link_to 'Back', projects_path %>

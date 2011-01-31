@@ -1,0 +1,30 @@
+<h1>Listing project_factors</h1>
+
+<table>
+  <tr>
+    <th>Cost</th>
+    <th>Schematic factor</th>
+    <th>Preliminary factor</th>
+    <th>Working drawing factor</th>
+    <th>Total design fee factor</th>
+    <th>Services during construction factor</th>
+  </tr>
+
+<% @project_factors.each do |project_factor| %>
+  <tr>
+    <td><%=h project_factor.cost %></td>
+    <td><%=h project_factor.schematic_factor %></td>
+    <td><%=h project_factor.preliminary_factor %></td>
+    <td><%=h project_factor.working_drawing_factor %></td>
+    <td><%=h project_factor.total_design_fee_factor %></td>
+    <td><%=h project_factor.services_during_construction_factor %></td>
+    <td><%= link_to 'Show', project_factor %></td>
+    <td><%= link_to 'Edit', edit_project_factor_path(project_factor) %></td>
+    <td><%= link_to 'Destroy', project_factor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New project_factor', new_project_factor_path %>
